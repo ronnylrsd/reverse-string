@@ -5,7 +5,7 @@ public class reverseString {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Escreva alguma coisa: ");
         String normalString = scanner.nextLine();
-        String reverseString = functionReverseStringWithLoop(normalString);
+        String reverseString = functionReverseStringWithSwap(normalString);
         System.out.println("A string invertida é: " + reverseString);
         scanner.close();
     }
@@ -21,6 +21,16 @@ public class reverseString {
             reversedString.append(str.charAt(i));
         }
         return reversedString.toString();
+    }
+
+    private static String functionReverseStringWithSwap(String str){
+        var arrayReversed = str.toCharArray();
+        var lastIndex = str.length() - 1;
+        for(int i = 0; i < str.length() / 2; i++){
+            arrayReversed[i] = str.charAt(lastIndex - i);
+            arrayReversed[lastIndex - i] = str.charAt(i);
+        }
+        return String.valueOf(arrayReversed);
     }
 
 }
