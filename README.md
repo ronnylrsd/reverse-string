@@ -10,9 +10,6 @@
   <a href="#-colaboradores">Colaborador</a>
 </p>
 
-
-![Anime Website](https://i.ibb.co/MG1nbqt/YT-Thumbnails-2.png)
-
 ## 💻 Projeto
 
 Projeto desafio para uma vaga de emprego, foram criadas 3 formas de se reverter uma string:
